@@ -26,7 +26,8 @@ class _AddTaskState extends State<AddTask> {
         .set({
       'title': titleController.text,
       'description': descriptionController.text,
-      'time': time.toString()
+      'time': time.toString(),
+      'timestamp': time
     });
   }
 
