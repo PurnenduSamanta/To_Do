@@ -11,7 +11,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   runApp(const MyApp());
-}l̥
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
