@@ -32,7 +32,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ToDo"),
+        title: Text(
+          "ToDo",
+          style: TextStyle(color: Colors.white),
+        ),
         actions: [
           IconButton(
             onPressed: () async {
@@ -92,16 +95,21 @@ class _HomeState extends State<Home> {
                                     children: [
                                       Text(
                                         docs?[index]['title'],
-                                        style: TextStyle(fontSize: 20),
+                                        style: TextStyle(
+                                            fontSize: 18, color: Colors.white),
                                       ),
                                       SizedBox(height: 3),
-                                      Text(DateFormat.yMd()
-                                          .add_jm()
-                                          .format(date)),
+                                      Text(
+                                        DateFormat.yMd().add_jm().format(date),
+                                        style: TextStyle(color: Colors.white),
+                                      ),
                                     ],
                                   ),
                                   IconButton(
-                                    icon: Icon(Icons.delete),
+                                    icon: Icon(
+                                      Icons.delete,
+                                      color: Colors.white,
+                                    ),
                                     onPressed: () async {
                                       await FirebaseFirestore.instance
                                           .collection('tasks')

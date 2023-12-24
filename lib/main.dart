@@ -20,10 +20,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'ToDo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,
+        brightness: Brightness.light,
         primaryColor: Colors.blueAccent,
         useMaterial3: true,
       ),
@@ -31,10 +31,8 @@ class MyApp extends StatelessWidget {
           stream: FirebaseAuth.instance.authStateChanges(),
           builder: (context, userSnapshot) {
             if (userSnapshot.hasData) {
-              print("SignmedIn");
               return Home();
             } else {
-              print("NotSignmedIn");
               return AuthScreen();
             }
           }),

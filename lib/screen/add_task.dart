@@ -35,40 +35,54 @@ class _AddTaskState extends State<AddTask> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('New Task'),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
+        backgroundColor: Colors.blueAccent,
+        title: Text(
+          'New Task',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: Container(
-        padding: EdgeInsets.all(5),
+        padding: EdgeInsets.only(top: 20, left: 20, right: 20),
         child: Column(
           children: [
-            TextFormField(
+            TextField(
               controller: titleController,
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide()),
-                  labelText: 'title'),
+                  labelText: 'Title'),
             ),
-            SizedBox(height: 10),
-            TextFormField(
+            SizedBox(height: 20),
+            TextField(
               controller: descriptionController,
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide()),
-                  labelText: 'description'),
+                  labelText: 'Description'),
             ),
-            SizedBox(height: 10),
-            Container(
-                width: double.infinity,
+            SizedBox(height: 30),
+            SizedBox(
+                width: MediaQuery.of(context).size.width / 2,
                 height: 40,
                 child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blueAccent,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(0))),
                     onPressed: () {
                       addTaskToFirebas();
                     },
-                    child: Text('Add Task')))
+                    child: Text(
+                      'Add Task',
+                      style: TextStyle(color: Colors.white),
+                    )))
           ],
         ),
       ),

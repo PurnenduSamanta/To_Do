@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo/auth/authForm.dart';
+import 'package:todo/auth/my_form.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});
@@ -12,8 +12,7 @@ class _AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Authentication'),),
-      body: AuthForm(),
+      body: MyForm(),
     );
   }
 }
