@@ -1,16 +1,19 @@
 # todo
 
-A ToDo App using Firebase
+A Note taking App using Firebase from the tutorial [Aksit Madan](https://www.youtube.com/@AkshitMadan/featured)
+# Features:
+- SignUp
+- SignIn
+- AddTask
+- Delete Task
+- See the Task
+- Logout
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+<img src="https://github.com/PurnenduSamanta/To_Do/assets/69786552/a88ba718-dadb-40f7-9e7b-35877a34024d" width="200" height="450" /><img src="https://github.com/PurnenduSamanta/To_Do/assets/69786552/e645d54a-dbba-44f5-8d9d-a3c856c87192" width="200" height="450" hspace="20"/>
+<img src="https://github.com/PurnenduSamanta/To_Do/assets/69786552/2108e577-6364-4372-9e0e-699994815e2a" width="200" height="450" hspace="20"/>
+<img src="https://github.com/PurnenduSamanta/To_Do/assets/69786552/5f986349-e29f-44f1-9583-c6c61f410ddd" width="200" height="450" hspace="20"/>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
